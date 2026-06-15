@@ -1,26 +1,39 @@
-**/.claude/
-/.codex-gh/
-**/.idea/
-.vscode/
-
-__pycache__/
-*.py[cod]
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-
+# Python virtual environment
 .venv/
 venv/
 env/
 
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Node.js
 node_modules/
 dist/
-.vite/
 
-**/.env
-**/.env.*
-!**/.env.example
+# Environment variables (sensitive)
+.env
+.env.local
+.env.*.local
 
-*.log
-*.sqlite
-*.db
+# Cache
+cache/
+*.cache
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Claude
+.claude/
+
+# CodeSandbox
+.codex-gh/
